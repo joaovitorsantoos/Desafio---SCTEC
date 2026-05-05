@@ -1,0 +1,406 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: relative;
+  z-index: 200;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Fredoka", sans-serif;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  color: #2d5a27;
+  font-size: 40px;
+  margin-top: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.logotipo {
+  font-family: "Fredoka", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #2d5a27;
+}
+
+.amarelo {
+  color: #ffd700;
+}
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.cabecalho .menu {
+  gap: 16px;
+}
+
+.cabecalho .menu a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+@media (min-width: 769px) {
+  .cabecalho .menu {
+    display: flex;
+  }
+}
+
+.cabecalho .menu a:hover {
+  color: #ffd700;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hero {
+  background: #2d5a27;
+  margin: 10px 20px;
+  border-radius: 50px;
+  color: white;
+  padding: 40px 0;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.hero_conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hero .hero_acoes {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.hero .hero_acoes button {
+  padding: 16px 24px;
+  background: #ffd700;
+  color: #2d5a27;
+  border: 0;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.hero .hero_acoes button:hover {
+  transform: scale(1.05);
+  background: #f2cc00;
+}
+
+.hero .hero_acoes a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero_imagem img {
+  width: 600px;
+  position: absolute;
+  bottom: 0;
+  right: 64px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.sobre {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+.sobre_info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.sobre_info .sobre_conteudo {
+  flex: 1;
+}
+
+.sobre_info .sobre_imagem {
+  flex: 1;
+  min-width: 300px;
+  background: #ffd700;
+  border-radius: 30px;
+  padding: 32px 32px 0 32px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.sobre_indicadores {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.sobre_indicadores .sobre_indicador_item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sobre_indicadores .sobre_indicador_item strong {
+  font-family: "Fredoka", sans-serif;
+  font-size: 40px;
+  color: #2d5a27;
+}
+
+.sobre_info .sobre_imagem img {
+  width: 50%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin-bottom: -5px;
+}
+
+.servicos {
+  padding: 64px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.servicos_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.servico_card {
+  background: white;
+  padding: 32px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.servico_card:hover {
+  transform: translateY(-10px);
+}
+
+.servico_icone {
+  font-size: 48px;
+  margin-bottom: 16px;
+  background: #fff9db;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+}
+
+.contato {
+  padding: 64px 0;
+}
+
+.contato_box {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #2d5a27;
+  padding: 40px;
+  border-radius: 30px;
+  color: white;
+}
+
+.contato_box h2 {
+  color: white;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.campo input,
+.campo textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+}
+
+.btn_enviar {
+  width: 100%;
+  padding: 16px;
+  background: #ffd700;
+  color: #2d5a27;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#status_envio {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.depoimentos {
+  padding: 80px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.depoimentos h2 {
+  margin-bottom: 48px;
+}
+
+.depoimentos_grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.depoimento_card {
+  flex: 1;
+  min-width: 300px;
+  max-width: 350px;
+  background: #fdfdfd;
+  padding: 40px 30px;
+  border-radius: 20px;
+  border-bottom: 5px solid #ffd700;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.aspas {
+  font-family: "Fredoka", sans-serif;
+  font-size: 80px;
+  color: #ffd700;
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  opacity: 0.3;
+}
+
+.depoimento_card p {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.depoimento_card strong {
+  display: block;
+  color: #2d5a27;
+  font-size: 18px;
+}
+
+.pet_nome {
+  font-size: 14px;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .hero .hero_conteudo {
+    align-items: center;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 32px;
+  }
+  .hero_imagem {
+    display: none;
+  }
+
+  .sobre_info {
+    flex-direction: column;
+  }
+
+  .depoimentos_grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border: none;
+  }
+
+  .hamburger::before,
+  .hamburger::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: #2d5a27;
+    left: 0;
+  }
+
+  .hamburger::before {
+    top: -8px;
+  }
+  .hamburger::after {
+    top: 8px;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+}

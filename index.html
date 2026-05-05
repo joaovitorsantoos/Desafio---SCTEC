@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tchuxabum Pet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container cabecalho">
+        <div class="logotipo">Tchuxabum<span class="amarelo">.pet</span></div>
+
+        <button class="hamburger" aria-label="Menu"></button>
+
+        <nav class="menu">
+          <a href="#hero">Inicio</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="container">
+          <div class="hero_conteudo">
+            <h1>
+              Cuidando do seu pet <br />com
+              <span class="amarelo">carinho e qualidade</span>
+            </h1>
+            <p>
+              Banho, tosa e produtos selecionados para garantir a saúde e
+              felicidade do seu melhor amigo.
+            </p>
+            <div class="hero_acoes">
+              <button type="button">Agendar Atendimento!</button>
+              <a href="#">Conheça nossos serviços.</a>
+            </div>
+          </div>
+
+          <div class="hero_imagem">
+            <img
+              src="images/imag.png"
+              alt="Cachorro Golden Retriever sorridente"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="container sobre" id="sobre">
+        <div class="sobre_info">
+          <div class="sobre_conteudo">
+            <h2>Sobre a Tchuxabum<span class="amarelo">.pet</span></h2>
+
+            <p>
+              Na Tchuxabum.Pet, acreditamos que cada animal merece cuidado,
+              carinho e atenção especial.
+            </p>
+            <p>
+              Nossa missão é oferecer serviços de qualidade, com profissionais
+              dedicados e um ambiente seguro, garantindo o bem-estar e a
+              felicidade do seu pet.
+            </p>
+            <p>
+              Trabalhamos com produtos selecionados e técnicas adequadas para
+              cada tipo de pelagem, sempre respeitando o conforto e a
+              individualidade de cada animal.
+            </p>
+
+            <div class="sobre_indicadores">
+              <div class="sobre_indicador_item">
+                <strong><span class="amarelo">+</span>200</strong>
+                <span>Pets atendidos</span>
+              </div>
+              <div class="sobre_indicador_item">
+                <strong><span class="amarelo">+</span>2</strong>
+                <span>Anos de experiência</span>
+              </div>
+              <div class="sobre_indicador_item">
+                <strong>100<span class="amarelo">%</span></strong>
+                <span>Satisfação</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sobre_imagem">
+            <img
+              src="images/img2.png"
+              alt="Cachorro da raça Salsicha olhando para cima"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="servicos" id="servicos">
+        <div class="container">
+          <h2>Nossos <span class="amarelo">Serviços</span></h2>
+          <div class="servicos_grid">
+            <div class="servico_card">
+              <div class="servico_icone">🚿</div>
+              <h3>Banho e Tosa</h3>
+              <p>
+                Higiene completa com produtos específicos para cada tipo de
+                pelagem.
+              </p>
+            </div>
+            <div class="servico_card">
+              <div class="servico_icone">🩺</div>
+              <h3>Consultas</h3>
+              <p>
+                Atendimento veterinário preventivo para garantir a saúde do seu
+                pet.
+              </p>
+            </div>
+            <div class="servico_card">
+              <div class="servico_icone">🦴</div>
+              <h3>Pet Shop</h3>
+              <p>
+                Acessórios, brinquedos e rações das melhores marcas do mercado.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="depoimentos" id="depoimentos">
+        <div class="container">
+          <h2>Opinião de quem <span class="amarelo">confia na gente</span></h2>
+          <div class="depoimentos_grid">
+            <div class="depoimento_card">
+              <div class="aspas">“</div>
+              <p>
+                O melhor pet shop dos Ingleses! O banho e tosa são impecáveis e
+                o carinho com a minha Golden foi incrível.
+              </p>
+              <strong>- Mariana Silva</strong>
+              <span class="pet_nome">Dona da Mel</span>
+            </div>
+
+            <div class="depoimento_card">
+              <div class="aspas">“</div>
+              <p>
+                Sempre levo meu gatinho para as consultas de rotina. Atendimento
+                nota 10 e profissionais muito atenciosos.
+              </p>
+              <strong>- Ricardo Oliveira</strong>
+              <span class="pet_nome">Pai do Tom</span>
+            </div>
+
+            <div class="depoimento_card">
+              <div class="aspas">“</div>
+              <p>
+                Produtos de muita qualidade e entrega super rápida aqui na
+                região. Recomendo a todos da ilha!
+              </p>
+              <strong>- Ana Paula</strong>
+              <span class="pet_nome">Dona do Thor</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contato" id="contato">
+        <div class="container">
+          <div class="contato_box">
+            <h2>Fale <span class="amarelo">Conosco</span></h2>
+            <form id="form_contato">
+              <div class="campo">
+                <label for="nome">Nome:</label>
+                <input
+                  type="text"
+                  id="nome"
+                  required
+                  placeholder="Seu nome completo"
+                />
+              </div>
+              <div class="campo">
+                <label for="email">E-mail:</label>
+                <input
+                  type="email"
+                  id="email"
+                  required
+                  placeholder="seu@email.com"
+                />
+              </div>
+              <div class="campo">
+                <label for="mensagem">Mensagem:</label>
+                <textarea
+                  id="mensagem"
+                  required
+                  rows="4"
+                  placeholder="Como podemos ajudar seu pet?"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn_enviar">Enviar Mensagem</button>
+            </form>
+            <div id="status_envio"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
